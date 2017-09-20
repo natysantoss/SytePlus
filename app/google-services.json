@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "784311832558",
+    "firebase_url": "https://cityplus-6ac03.firebaseio.com",
+    "project_id": "cityplus-6ac03",
+    "storage_bucket": "cityplus-6ac03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784311832558:android:0f3b8f7dfc046e68",
+        "android_client_info": {
+          "package_name": "br.edu.unileao.syteplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784311832558-sq43f1m33h9etggmka56sv6gjk16q8rj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.unileao.syteplus",
+            "certificate_hash": "3117bf2e68d1f0f855190f1b10616da71c8c1bf5"
+          }
+        },
+        {
+          "client_id": "784311832558-4lkiio9kgsn7s4nd914gsmnffg4ph1k6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq1ITbF7VAgtkkd2KaRgip4O5TBJl4GEQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784311832558-4lkiio9kgsn7s4nd914gsmnffg4ph1k6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
