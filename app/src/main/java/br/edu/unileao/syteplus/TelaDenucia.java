@@ -9,10 +9,6 @@ import android.widget.EditText;
 import com.google.firebase.auth.FirebaseAuth;
 
 
-/**
- * Created by Naty Santos on 01/09/2017.
- */
-
 public class TelaDenucia  extends AppCompatActivity {
 
     private Button Enviar;

@@ -24,10 +24,10 @@
 
 
     <TextView
+        android:id="@+id/cadatrarUusario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/cadatrarUusario"
-        android:hint="cadatrarUusario"/>
+        android:hint="cadatrarUusario" />
 
     <TextView
         android:layout_width="match_parent"
@@ -35,6 +35,11 @@
         android:id="@+id/recuperarSenha"
         android:hint="recuperarSenha"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logar"
+        android:hint="logar"/>
 
 
 

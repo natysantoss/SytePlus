@@ -3,6 +3,6 @@
     <string name="usuario">usuario</string>
     <string name="senha">senha</string>
     <string name="login">login</string>
-    <string name="facebook_app_id">[APP_ID]</string>
-    <string name="fb_login_protocol_scheme">fb[APP_ID]</string>
+    <string name="facebook_app_id">1450925351670453</string>
+    <string name="fb_login_protocol_scheme">fb1450925351670453</string>
 </resources>

@@ -9,10 +9,6 @@ import com.google.firebase.database.Exclude;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by Naty Santos on 28/08/2017.
- */
-
 public class Usuario {
     private String Id;
     private String nome;
@@ -26,7 +22,7 @@ public class Usuario {
     }
 
     public void salvarBD(){
-        DatabaseReference dados=ConfiguracaoFirebase.refernciaBancoFirebase();
+        DatabaseReference dados=ConfiguracaoFirebase.referenciaBancoFirebase();
         dados.child("user").child(String.valueOf(getId())).setValue(this);
     }
 
@@ -42,7 +38,7 @@ public class Usuario {
     }
 
     public void atualizarDados(){
-        DatabaseReference atualizar=ConfiguracaoFirebase.refernciaBancoFirebase();
+        DatabaseReference atualizar=ConfiguracaoFirebase.referenciaBancoFirebase();
 
         FirebaseUser user=aut.getCurrentUser();
         Map<String,Object> up=new HashMap<>();
@@ -55,7 +51,7 @@ public class Usuario {
     }
 
     public void deletarConta(){
-        DatabaseReference remover=ConfiguracaoFirebase.refernciaBancoFirebase();
+        DatabaseReference remover=ConfiguracaoFirebase.referenciaBancoFirebase();
         FirebaseUser user=aut.getCurrentUser();
         remover.child("user").child(user.getUid().toString()).removeValue();
         user.delete();
