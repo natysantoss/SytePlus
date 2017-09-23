@@ -52,6 +52,7 @@ public class  AtualizarDados extends Activity {
         }
 
 
+
     }
 
     private void atualizarDados(){
@@ -63,5 +64,11 @@ public class  AtualizarDados extends Activity {
         UsuarioController usuarioController = new Usuario();
         UsuarioController.atualizarDados(usuario);
 
+
     }
+
+
+    }
+
+
 }
