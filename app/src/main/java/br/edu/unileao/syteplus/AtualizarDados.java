@@ -61,8 +61,8 @@ public class  AtualizarDados extends Activity {
         usuario.setEstado(estado.getText().toString());
         usuario.setCidade(cidade.getText().toString());
         usuario.setEmail(email.getText().toString());
-        UsuarioController usuarioController = new Usuario();
-        UsuarioController.atualizarDados(usuario);
+        UsuarioController usuarioController = new UsuarioController();
+        usuario.atualizarDados();
 
 
     }
@@ -71,4 +71,3 @@ public class  AtualizarDados extends Activity {
     }
 
 
-}
