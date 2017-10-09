@@ -23,14 +23,14 @@ public class  AtualizarDados extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_atualizar_dados);
 
-        nome = (EditText) findViewById(R.id.pegarNome);
-        estado = (EditText) findViewById(R.id.pegarEstado);
-        cidade = (EditText) findViewById(R.id.pagarCidade);
+        nome = (EditText) findViewById(R.id.Nome);
+        estado = (EditText) findViewById(R.id.Estado);
+        cidade = (EditText) findViewById(R.id.Cidade);
         atualizar = (Button) findViewById(R.id.enviarAtualizacao);
         email= (EditText) findViewById(R.id.email);
         UsuarioController usuarioController = new UsuarioController();
 
-        dados = usuarioController.renoDados(AtualizarDados.this);
+        usuarioController.renoDados(AtualizarDados.this);
         teste = nome.getText().toString().isEmpty();
         if (teste) {
             usuarioController.pegarDados(AtualizarDados.this);

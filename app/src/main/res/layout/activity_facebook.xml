@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
-
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -27,14 +20,22 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button_facebook_signout"
-        android:hint="button_facebook_signout"/>
+        android:id="@+id/facebook_signout"
+        android:hint="facebook_signout"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button_facebook_login"
-        android:hint="button_facebook_login"/>
+        android:id="@+id/facebook_login"
+        android:hint="facebook_login"/>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp" />
 
 
 </LinearLayout>

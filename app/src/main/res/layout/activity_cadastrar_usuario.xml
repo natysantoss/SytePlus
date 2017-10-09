@@ -20,13 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/confirSenhaUsuario"
-        android:hint="ConfirmaSenha"
-        />
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/escolha"
-        />
+        android:hint="ConfirmaSenha" />
+
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

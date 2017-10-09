@@ -4,11 +4,11 @@
     android:layout_height="match_parent">
 
 
-    <Button
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/denuncia"
-        android:hint="denuncia"/>
+        android:id="@+id/Denuncia"
+        android:hint="Denuncia"/>
 
    <Button
        android:layout_width="match_parent"

@@ -25,7 +25,7 @@ public class CadastrarUsuario extends AppCompatActivity {
     private EditText confimarSenha;
     private Button salvar;
     private Usuario usuario;
-    private Button mf;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,6 @@ public class CadastrarUsuario extends AppCompatActivity {
         senha=(EditText) findViewById(R.id.senhaUsuario);
         confimarSenha=(EditText) findViewById(R.id.confirSenhaUsuario);
         salvar=(Button) findViewById(R.id.btSalvar);
-        mf = (RadioButton) findViewById(R.id.escolha);
 
         salvar.setOnClickListener(new View.OnClickListener() {
             @Override

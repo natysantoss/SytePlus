@@ -13,7 +13,6 @@ public class TelaDenucia  extends AppCompatActivity {
 
     private Button Enviar;
     private EditText Ocorrencia;
-    private Button Imagem;
     private Usuario usuario;
     private FirebaseAuth auth;
 
@@ -23,8 +22,8 @@ public class TelaDenucia  extends AppCompatActivity {
 
       setContentView(R.layout.activity_tela_denuncia);
       Enviar=(Button) findViewById(R.id.enviar);
-        Ocorrencia=(EditText) findViewById(R.id.ocorrencia);
-        Imagem=(Button)  findViewById(R.id.imagem);
+        Ocorrencia=(EditText) findViewById(R.id.Ocorrencia);
+
 
                 }
 }

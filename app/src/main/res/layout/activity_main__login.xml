@@ -3,6 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,29 +22,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/logarSistema"
         android:hint="logarSistema"/>
-
-
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/cadatrarUusario"
-    android:hint="cadatrarUusario"/>
-
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="recuperarSenha"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/logar"
-        android:hint="logar"/>
-
-
-
-
 
 
 </LinearLayout>

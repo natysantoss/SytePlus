@@ -3,22 +3,17 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/imagem"
-    android:hint="imagem"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ocorrencia"
-        android:hint="ocorrencia"/>
+        android:id="@+id/Ocorrencia"
+        android:hint="Ocorrencia"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/enviar"
-        android:hint="enviar"/>
+        android:hint="Enviar"/>
 
 </LinearLayout>

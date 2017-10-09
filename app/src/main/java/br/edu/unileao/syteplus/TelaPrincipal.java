@@ -7,11 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class TelaPrincipal extends AppCompatActivity {
-    private Button denuncia;
+    private EditText denuncia;
     private Button sair;
     private Button deletarConta;
     private FirebaseAuth sairSistema;
@@ -20,7 +21,7 @@ public class TelaPrincipal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_principal);
-        denuncia=(Button) findViewById(R.id.denuncia);
+        denuncia=(EditText) findViewById(R.id.denuncia);
         sair=(Button) findViewById(R.id.sair);
         deletarConta=(Button) findViewById(R.id.apagarConta);
         telaAtd=(Button) findViewById(R.id.Atualizartela);

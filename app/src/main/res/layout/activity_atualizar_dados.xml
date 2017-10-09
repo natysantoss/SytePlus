@@ -7,20 +7,20 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pegarNome"
-        android:hint="pegarNome" />
+        android:id="@+id/Nome"
+        android:hint="Nome" />
 
    <EditText
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:id="@+id/pegarEstado"
-       android:hint="pegarEstado"/>
+       android:id="@+id/Estado"
+       android:hint="Estado"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pagarCidade"
-        android:hint="pagarCidade"/>
+        android:id="@+id/Cidade"
+        android:hint="Cidade"/>
 
     <EditText
         android:layout_width="match_parent"
