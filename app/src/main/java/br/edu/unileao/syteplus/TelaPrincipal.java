@@ -21,7 +21,7 @@ public class TelaPrincipal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_principal);
-        denuncia=(EditText) findViewById(R.id.denuncia);
+        denuncia=(EditText) findViewById(R.id.Denuncia);
         sair=(Button) findViewById(R.id.sair);
         deletarConta=(Button) findViewById(R.id.apagarConta);
         telaAtd=(Button) findViewById(R.id.Atualizartela);
