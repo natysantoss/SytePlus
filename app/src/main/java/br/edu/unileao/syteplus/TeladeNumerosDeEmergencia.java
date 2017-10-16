@@ -27,5 +27,6 @@ public class TeladeNumerosDeEmergencia extends AppCompatActivity {
         DisqueDenúncia181.setText("181");
         Samu192=(EditText) findViewById(R.id.Samu191);
         Samu192.setText("191");
+
     }
 }

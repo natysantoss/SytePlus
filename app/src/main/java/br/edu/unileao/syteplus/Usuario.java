@@ -13,8 +13,6 @@ public class Usuario {
     private String Id;
     private String nome;
     private String senha;
-    private String estado;
-    private String cidade;
     private String email;
     private FirebaseAuth aut=ConfiguracaoFirebase.autenticarDados();
 
@@ -31,8 +29,6 @@ public class Usuario {
         HashMap<String,Object> dadosSalvar=new HashMap<>();
         dadosSalvar.put("nome",getNome());
         dadosSalvar.put("senha",getSenha());
-        dadosSalvar.put("estado",getEstado());
-        dadosSalvar.put("cidade",getCidade());
         dadosSalvar.put("email",getEmail());
         return dadosSalvar;
     }
@@ -43,8 +39,6 @@ public class Usuario {
         FirebaseUser user=aut.getCurrentUser();
         Map<String,Object> up=new HashMap<>();
         up.put("nome",getNome());
-        up.put("estado",getEstado());
-        up.put("cidade",getCidade());
         up.put("email",getEmail());
         atualizar.child("user").child(String.valueOf(user.getUid().toString())).updateChildren(up);
 
@@ -77,23 +71,6 @@ public String getId()  {return Id;}
 
     public void setSenha(String senha) {
         this.senha = senha;
-    }
-
-
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-
-    public String getCidade() {
-        return cidade;
-    }
-
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
     }
 
     public String getEmail() {return email; }

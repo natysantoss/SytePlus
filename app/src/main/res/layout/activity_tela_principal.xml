@@ -9,6 +9,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/Denuncia"
         android:hint="Denuncia"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Atualizartela"
+        android:hint="Atualizartela"/>
 
    <Button
        android:layout_width="match_parent"
@@ -22,10 +27,5 @@
         android:id="@+id/apagarConta"
         android:hint="ApagarConta"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Atualizartela"
-        android:hint="Atualizartela"/>
 
 </LinearLayout>

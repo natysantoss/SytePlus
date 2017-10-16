@@ -11,8 +11,7 @@ import android.widget.EditText;
 public class  AtualizarDados extends Activity {
 
     private EditText nome;
-    private EditText estado;
-    private EditText cidade;
+    private EditText senha;
     private Button atualizar;
     private EditText email;
     private boolean teste;
@@ -24,8 +23,7 @@ public class  AtualizarDados extends Activity {
         setContentView(R.layout.activity_atualizar_dados);
 
         nome = (EditText) findViewById(R.id.Nome);
-        estado = (EditText) findViewById(R.id.Estado);
-        cidade = (EditText) findViewById(R.id.Cidade);
+        senha= (EditText) findViewById(R.id.senha);
         atualizar = (Button) findViewById(R.id.enviarAtualizacao);
         email= (EditText) findViewById(R.id.email);
         UsuarioController usuarioController = new UsuarioController();
@@ -36,8 +34,7 @@ public class  AtualizarDados extends Activity {
             usuarioController.pegarDados(AtualizarDados.this);
         }
         nome.setText(dados[0].toString());
-        estado.setText(dados[1].toString());
-        cidade.setText(dados[2].toString());
+        senha.setText(dados[1].toString());
         teste = nome.getText().toString().isEmpty();
         if (teste) {
             Handler handler = new Handler();
@@ -58,9 +55,8 @@ public class  AtualizarDados extends Activity {
     private void atualizarDados(){
         Usuario usuario=new Usuario();
         usuario.setNome(nome.getText().toString());
-        usuario.setEstado(estado.getText().toString());
-        usuario.setCidade(cidade.getText().toString());
         usuario.setEmail(email.getText().toString());
+        usuario.setSenha(senha.getText().toString());
         UsuarioController usuarioController = new UsuarioController();
         usuario.atualizarDados();
 

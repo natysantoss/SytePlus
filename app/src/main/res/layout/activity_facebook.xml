@@ -11,11 +11,13 @@
         android:id="@+id/status"
         android:hint="status"/>
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/detail"
         android:hint="detail"/>
+
 
     <Button
         android:layout_width="match_parent"

@@ -11,8 +11,9 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class TelaDenucia  extends AppCompatActivity {
 
-    private Button Enviar;
+
     private EditText Ocorrencia;
+    private Button Enviar;
     private Usuario usuario;
     private FirebaseAuth auth;
 
@@ -23,6 +24,14 @@ public class TelaDenucia  extends AppCompatActivity {
       setContentView(R.layout.activity_tela_denuncia);
       Enviar=(Button) findViewById(R.id.enviar);
         Ocorrencia=(EditText) findViewById(R.id.Ocorrencia);
+
+        Enviar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TelaController telaController=new TelaController();
+                telaController.ocorrencia(Ocorrencia.getText().toString());
+            }
+        });
 
 
                 }
