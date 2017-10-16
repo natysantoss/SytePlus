@@ -35,6 +35,7 @@ public class  AtualizarDados extends Activity {
         }
         nome.setText(dados[0].toString());
         senha.setText(dados[1].toString());
+
         teste = nome.getText().toString().isEmpty();
         if (teste) {
             Handler handler = new Handler();
