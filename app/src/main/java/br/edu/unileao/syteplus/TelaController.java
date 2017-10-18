@@ -5,8 +5,12 @@ package br.edu.unileao.syteplus;
  */
 
 class TelaController {
+
     public void ocorrencia(String valor) {
-        
+        Denuncia denuncia=new Denuncia();
+        denuncia.setDenuncia(valor);
+        TelaModel telaModel=new TelaModel();
+        telaModel.salavarNOBanco(denuncia);
     }
 
 }

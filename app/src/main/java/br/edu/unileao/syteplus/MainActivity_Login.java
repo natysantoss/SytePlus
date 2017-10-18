@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity_Login extends AppCompatActivity {
 
     private TextView cadastrar;
-    private TextView resetSenha;
+    private TextView Senha;
     private Button logar;
     private EditText email;
     private EditText senha;
@@ -38,7 +38,7 @@ public class MainActivity_Login extends AppCompatActivity {
         logar=(Button) findViewById(R.id.logarSistema);
         aut= (FirebaseAuth) ConfiguracaoFirebase.autenticarDados();
         cadastrar=(TextView) findViewById(R.id.cadatrarUusario);
-        resetSenha=(TextView) findViewById(R.id.recuperarSenha);
+        Senha=(TextView) findViewById(R.id.senha);
 
         logar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +51,7 @@ public class MainActivity_Login extends AppCompatActivity {
 
 
         });
-        resetSenha.setOnClickListener(new View.OnClickListener() {
+        Senha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(MainActivity_Login.this,ResetSenha.class);
