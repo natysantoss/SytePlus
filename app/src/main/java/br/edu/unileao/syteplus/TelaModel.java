@@ -9,8 +9,8 @@ import com.google.firebase.database.FirebaseDatabase;
  */
 
 public class TelaModel {
-    DatabaseReference conecxao=ConfiguracaoFirebase.referenciaBancoFirebase();
+    DatabaseReference conexão=ConfiguracaoFirebase.referenciaBancoFirebase();
     public void salavarNOBanco(Denuncia denuncia){
-        conecxao.child("ocorrencia").setValue(denuncia.de());
+        conexão.child("ocorrencia").setValue(denuncia.de());
     }
 }
